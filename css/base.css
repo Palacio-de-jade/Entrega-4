@@ -1,0 +1,27 @@
+/* 01-base.css
+   Reset / base styles, tipografia e comportamento global
+*/
+
+*{box-sizing:border-box}
+html{font-family:var(--font-sans);font-size:16px;line-height:1.4;color:var(--color-neutral-900);-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--color-neutral-100);color:var(--color-neutral-800);-webkit-font-smoothing:antialiased}
+img,svg,video{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+.container{max-width:var(--container-max);margin:0 auto;padding:0 var(--sp-16);width:100%}
+
+/* Tipografia */
+h1{font-size:var(--fs-xxl);margin:0 0 var(--sp-16);font-weight:700}
+h2{font-size:var(--fs-xl);margin:0 0 var(--sp-12);font-weight:700}
+h3{font-size:var(--fs-lg);margin:0 0 var(--sp-8);font-weight:600}
+p{font-size:var(--fs-md);margin:0 0 var(--sp-12)}
+.small{font-size:var(--fs-sm)}
+.lead{font-size:var(--fs-lg);color:var(--color-neutral-600)}
+
+/* Foco acessível */
+:focus{outline: none}
+:focus-visible{outline: var(--focus-ring) solid rgba(0,160,107,0.15); outline-offset: 3px; border-radius:6px}
+
+/* Helpers */
+.row{display:flex;flex-wrap:wrap;gap:var(--sp-16)}
+.center{display:flex;align-items:center;justify-content:center}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}

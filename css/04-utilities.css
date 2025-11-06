@@ -1,0 +1,29 @@
+/* 04-utilities.css
+   Classes utilitárias rápidas: spacing, text, visibility, etc.
+*/
+
+/* spacing */
+.m-0{margin:0}
+.mt-8{margin-top:var(--sp-8)}
+.mt-16{margin-top:var(--sp-16)}
+.mt-24{margin-top:var(--sp-24)}
+.mb-16{margin-bottom:var(--sp-16)}
+.p-8{padding:var(--sp-8)}
+.p-16{padding:var(--sp-16)}
+.p-24{padding:var(--sp-24)}
+
+/* widths */
+.w-100{width:100%}
+.max-w-600{max-width:600px}
+
+/* text */
+.text-center{text-align:center}
+.text-right{text-align:right}
+.text-muted{color:var(--color-neutral-600);font-size:var(--fs-sm)}
+
+/* display helpers */
+.d-none{display:none !important}
+.d-block{display:block !important}
+
+/* utility to visually hide element but keep for screen readers */
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
